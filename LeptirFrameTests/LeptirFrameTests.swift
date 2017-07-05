@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import LeptirFrame
+import LeptirFrame
 
 class LeptirFrameTests: XCTestCase {
   
