@@ -38,4 +38,15 @@ public extension UIView {
     get { return self.top + self.height }
     set { self.top = newValue - self.height }
   }
+  
+  public var quter: CGFloat {
+    get { return self.width / 4 }
+    set { self.width = newValue * 4 }
+  }
+  
+  public var tenth: CGFloat {
+    get { return self.width / 10 }
+    set { self.width = newValue * 10 }
+  }
+  
 }

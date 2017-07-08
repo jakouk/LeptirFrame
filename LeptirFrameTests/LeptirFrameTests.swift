@@ -73,4 +73,27 @@ class LeptirFrameTests: XCTestCase {
     XCTAssertEqual(view.frame.origin.y, 130 - 50)
   }
   
+  func testViewQuter_get() {
+    let view = UIView()
+    view.width = 200
+    XCTAssertEqual(view.quter, view.width / 4)
+  }
+  
+  func testViewQuter_set() {
+    let view = UIView()
+    view.quter = 50
+    XCTAssertEqual(view.width , 50 * 4)
+  }
+  
+  func testViewTenth_get() {
+    let view = UIView()
+    view.width = 150
+    XCTAssertEqual(view.tenth, view.width / 10)
+  }
+  
+  func testViewTenth_set() {
+    let view = UIView()
+    view.tenth = 15
+    XCTAssertEqual(view.width, 15 * 10)
+  }
 }
